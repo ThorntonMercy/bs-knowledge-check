@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Knowledge Check</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="container py-5 bg-success-subtle">
+    <header>
+
+        <!-- Nav Bar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <a class="navbar-brand" href="#">Site Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <br />
+    <br />
+
+    <main>
+
+        <!-- Registration Form  -->
+
+        <div class="container-fluid bg-success-subtle" id="Home">
+            <br />
+            <h3 class="text-success">Registration Form</h3>
+
+            <form class="d-flex needs-validation" novalidate>
+                <div class="row">
+
+                    <!-- First Name Field -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">First Name:</label>
+                            <input type="text" name="first-name" id="first-name" class="form-control"
+                                placeholder="Enter your first name" required>
+                            <div class="invalid-feedback">Please enter your first name.</div>
+                        </div>
+                    </div>
+
+                    <!-- Last Name Field -->
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="last-name" class="form-label">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name" class="form-control"
+                                placeholder="Enter your last name" required>
+                            <div class="invalid-feedback">Please enter your last name.</div>
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="col-md-12">
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Please enter your email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="col-md-12">
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="Enter your password" required>
+                            <div class="invalid-feedback">Please enter a password.</div>
+                        </div>
+                    </div>
+
+                    <!-- Terms of Service  -->
+                    <div class="form-check mb-3">
+                        <label class="form-check-label" for="terms-conditions">
+                            I agree to the terms of service.
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="terms-conditions" required>
+                        <div class="invalid-feedback">You must agree to our terms of service in order to proceed.</div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br />
+        <br />
+
+        </div>
+
+        <!-- Simulated Data Table -->
+        <!-- Data lists first name, last name, email, and password.
+         Would assume that only successful registrations are displayed/recorded,
+         therefore no table data would be necessary to indicate that the user confirmed
+         agreement to ToS.  -->
+
+        <div class="table-responsive">
+            <table class="table table-success table-hover table-striped align-middle">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Dana</td>
+                    <td>Scully</td>
+                    <td>d.scully@xfiles.com</td>
+                    <td>IWantToBelieve</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Harry</td>
+                    <td>Vanderspeigle</td>
+                    <td>harry.v@residentalien.com</td>
+                    <td>GreysAreEvil</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Juliette</td>
+                    <td>Nichols</td>
+                    <td>j.nichols@silo.com</td>
+                    <td>DeepConspiracy</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Derek</td>
+                    <td>Hale</td>
+                    <td>derek.h@teenwolf.com</td>
+                    <td>ImTheAlphaNow</td>
+                </tr>
+
+                </thead>
+            </table>
+        </div>
+
+        <!-- Images - one regular, one rounded circle, both responsive  -->
+
+        <div class="container-fluid bg-success-subtle" id="About">
+            <br />
+            <br />
+            <img src="https://placehold.co/600x400" class="d-block mx-auto img-fluid" alt="Main Image">
+            <br />
+            <img src="https://placehold.co/600x400" class="d-block mx-auto img-fluid rounded-circle"
+                alt="Rounded Image">
+
+        </div>
+
+        <!-- This div has the "contact" ID as there isn't actually a contact-like section. -->
+
+        <div class="container-fluid bg-success-subtle" id="Contact">
+            <br />
+            <br />
+            <button type="button" class="btn btn-warning">Always Visible</button>
+            <!-- Button below is only visible on larger screens. -->
+            <button type="button" class="btn btn-info d-none d-md-block">Sometimes Visible</button>
+        </div>
+
+    </main>
+    <footer>
+        <br />
+        <br />
+        <p style="text-align: center; font-size: small; color:darkgreen;">
+            &#169; 2025 M. Thornton - CT Bootstrap Knowledge Check
+        </p>
+
+
+        <!-- Bootstrap 5 JS (bundle includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+        <!-- Custom Form Validation Script -->
+        <!-- For some reason I really struggled with bootstrap itself and getting the validation to work. 
+I know I'm definitely missing something, and do plan on continuing to go over it until I figure out what specifically
+I'm doing wrong. After spending over 2 hours on this form and doing at least half a dozen iterations, I figured the 
+less aggravating route would be to implement JS to run the validation instead since we do have to eventually cover 
+things like arrays, Nodelist, etc. anyway. -->
+
+        <script>
+            // Look for all forms (querySelectorAll) to pick all forms with validation requests.
+            // turned the nodelist (forms) into a usable array so we can use array methods on it.
+            var forms = document.querySelectorAll('.needs-validation');
+            var Array = Array.from(forms)
+
+                // Loops over the form (forEach) and prevent submission (preventDefault) and prevents (stopPropogation) it from
+                // trying to continue the process when the button (submit) is inappropriately/prematurely clicked when there
+                // are unanswered required fields or invalid inputs (checkValidity) was-validated is a BS class that tells 
+                // the page to display the error messages for invalid/un-entered fields the .was-validated class will also 
+                // show a visual validation feedback (ex. checkmark) when the input is valid
+
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        </script>
+
+    </footer>
+</body>
+
+</html>
